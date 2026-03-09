@@ -1,0 +1,87 @@
+.hero {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.heroTitle {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  line-height: var(--line-tight);
+}
+
+.heroSubtitle {
+  margin: 0;
+  max-width: 52ch;
+  margin-inline: auto;
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  line-height: var(--line-relaxed);
+}
+
+.sectionTitle {
+  margin: 0 0 var(--space-6);
+  font-size: var(--text-xl);
+  font-weight: 600;
+}
+
+.cards {
+  margin-bottom: var(--space-12);
+}
+
+.cardGrid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardLink:hover {
+  text-decoration: none;
+}
+
+.cardIcon {
+  display: inline-flex;
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+}
+
+.why {
+  margin-bottom: var(--space-12);
+  max-width: 65ch;
+}
+
+.whyText {
+  margin: 0;
+  font-size: var(--text-base);
+  line-height: var(--line-relaxed);
+  color: var(--color-text-muted);
+}
+
+.cta {
+  text-align: center;
+}
+
+.ctaButton {
+  font-size: var(--text-lg);
+  padding: var(--space-3) var(--space-6);
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

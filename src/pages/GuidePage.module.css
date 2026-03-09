@@ -1,0 +1,19 @@
+.guide404 {
+  text-align: center;
+  padding: var(--space-12) var(--space-4);
+}
+
+.guide404 h1 {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+}
+
+.guide404 p {
+  margin: 0 0 var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.guide404 a {
+  font-weight: 500;
+}

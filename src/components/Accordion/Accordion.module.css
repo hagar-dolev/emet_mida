@@ -1,0 +1,74 @@
+.accordion {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.heading {
+  margin: 0;
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-4);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: start;
+  background: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+  transition: background 0.15s;
+}
+
+.trigger:hover {
+  background: var(--color-bg);
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.icon {
+  font-size: var(--text-xl);
+  line-height: 1;
+  color: var(--color-text-muted);
+}
+
+.panel {
+  background: var(--color-bg);
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+.panelInner {
+  padding: 0 var(--space-4) var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--line-relaxed);
+  color: var(--color-text-muted);
+}
+
+.panelInner p:first-child {
+  margin-top: 0;
+}
+
+.panelInner p:last-child {
+  margin-bottom: 0;
+}

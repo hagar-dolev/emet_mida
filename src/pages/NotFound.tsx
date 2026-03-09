@@ -6,12 +6,12 @@ export function NotFound() {
   return (
     <PageLayout>
       <div className={styles.wrapper}>
-        <h1 className={styles.title}>Page not found</h1>
+        <h1 className={styles.title}>העמוד לא נמצא</h1>
         <p className={styles.text}>
-          The page you're looking for doesn't exist or has been moved.
+          העמוד שחיפשתם לא קיים או הועבר.
         </p>
         <Link to="/">
-          <Button variant="primary">Back to home</Button>
+          <Button variant="primary">חזרה לדף הבית</Button>
         </Link>
       </div>
     </PageLayout>

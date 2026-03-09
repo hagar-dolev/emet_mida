@@ -6,26 +6,26 @@ import styles from './Home.module.css';
 const featureCards = [
   {
     to: '/guides',
-    title: 'Guides',
-    summary: 'Practical guides to spot AI-assisted misinformation, use AI responsibly in journalism, and understand the legal gap.',
+    title: 'מדריכים',
+    summary: 'מדריכים מעשיים לזיהוי דיסאינפורמציה בעזרת בינה מלאכותית, שימוש אחראי ב-AI בעיתונות והבנת פער החקיקה.',
     icon: <IconBook />,
   },
   {
     to: '/legal',
-    title: 'Legal gaps',
-    summary: 'Why current laws are often insufficient to address AI-generated misleading content and what’s missing.',
+    title: 'פערי חקיקה',
+    summary: 'מדוע החוק הקיים לרוב לא מספיק כדי לטפל בתוכן מטעה שנוצר בבינה מלאכותית ומה חסר.',
     icon: <IconScale />,
   },
   {
     to: '/tech',
-    title: 'Technology',
-    summary: 'How LLMs and generative media enable mass production of misleading content and the feedback loop risk.',
+    title: 'טכנולוגיה',
+    summary: 'איך מודלי שפה ומדיה גנרטיבית מאפשרים ייצור המוני של תוכן מטעה וסיכון לולאת המשוב.',
     icon: <IconCpu />,
   },
   {
     to: '/proposal',
-    title: 'Proposal',
-    summary: 'Our proposed direction: better literacy and a legal amendment to close the gap for creators and consumers.',
+    title: 'הצעה',
+    summary: 'כיוון ההצעה שלנו: חיזוק אוריינות ותיקון חקיקתי לסגירת הפער עבור יוצרים וצרכנים.',
     icon: <IconFileText />,
   },
 ];
@@ -35,16 +35,16 @@ export function Home() {
     <PageLayout>
       <section className={styles.hero} aria-labelledby="hero-title">
         <h1 id="hero-title" className={styles.heroTitle}>
-          AI Misinformation & Legal Gaps
+          דיסאינפורמציה ובינה מלאכותית — פערי חקיקה
         </h1>
         <p className={styles.heroSubtitle}>
-          A public knowledge hub for creators and consumers of journalistic content — understand the risks, the legal lacuna, and what you can do.
+          מרכז ידע ציבורי ליוצרים ולצרכני תוכן עיתונאי — להבין את הסיכונים, את פער החקיקה ומה אפשר לעשות.
         </p>
       </section>
 
       <section className={styles.cards} aria-labelledby="features-heading">
         <h2 id="features-heading" className={styles.sectionTitle}>
-          Explore
+          גלו
         </h2>
         <div className={styles.cardGrid} role="list">
           {featureCards.map((card) => (
@@ -68,20 +68,20 @@ export function Home() {
 
       <section className={styles.why} aria-labelledby="why-heading">
         <h2 id="why-heading" className={styles.sectionTitle}>
-          Why this exists
+          למה האתר קיים
         </h2>
         <p className={styles.whyText}>
-          AI-enabled misinformation is different from classic misinformation: scale, ease of production, and synthetic media make it harder for individuals and existing law to keep up. We built this hub to explain the legal gap, the technology behind it, and to offer practical guidance. Our audience is anyone who creates or consumes journalistic content and wants to stay informed.
+          דיסאינפורמציה מבוססת בינה מלאכותית שונה מדיסאינפורמציה קלאסית: הקנה מידה, הקלות בייצור ומדיה סינתטית מקשים על הפרט ועל החוק הקיים להדביק את הקצב. בנינו את המרכז הזה כדי להסביר את פער החקיקה, את הטכנולוגיה שמאחוריו ולהציע הנחיות מעשיות. הקהל שלנו הוא כל מי שיוצר או צורך תוכן עיתונאי ורוצה להישאר מעודכן.
         </p>
       </section>
 
       <section className={styles.cta} aria-labelledby="cta-heading">
         <h2 id="cta-heading" className={styles.visuallyHidden}>
-          Get started
+          התחילו כאן
         </h2>
         <Link to="/guides">
           <Button variant="primary" className={styles.ctaButton}>
-            Start here — browse guides
+            התחילו כאן — עיינו במדריכים
           </Button>
         </Link>
       </section>

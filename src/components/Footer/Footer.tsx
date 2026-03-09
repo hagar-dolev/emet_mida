@@ -5,18 +5,18 @@ export function Footer() {
   return (
     <footer className={styles.footer} role="contentinfo">
       <div className={styles.inner}>
-        <nav className={styles.links} aria-label="Footer navigation">
-          <Link to="/">Home</Link>
-          <Link to="/guides">Guides</Link>
-          <Link to="/legal">Legal</Link>
-          <Link to="/tech">Technology</Link>
-          <Link to="/proposal">Proposal</Link>
+        <nav className={styles.links} aria-label="ניווט תחתון">
+          <Link to="/">בית</Link>
+          <Link to="/guides">מדריכים</Link>
+          <Link to="/legal">משפט</Link>
+          <Link to="/tech">טכנולוגיה</Link>
+          <Link to="/proposal">הצעה</Link>
         </nav>
         <p className={styles.disclaimer}>
-          This site is for informational and educational purposes only. It does not constitute legal advice. Consult a qualified professional for legal or compliance matters.
+          האתר מיועד למטרות מידע וחינוך בלבד. האמור בו אינו מהווה ייעוץ משפטי. יש להתייעץ עם בעל מקצוע מוסמך בעניינים משפטיים או רגולטוריים.
         </p>
         <p className={styles.copyright}>
-          © {new Date().getFullYear()} — Public knowledge hub. Content may be updated without notice.
+          © {new Date().getFullYear()} — מרכז ידע ציבורי. התוכן עשוי להתעדכן ללא הודעה מוקדמת.
         </p>
       </div>
     </footer>

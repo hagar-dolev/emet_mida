@@ -31,31 +31,31 @@ export interface Guide extends GuideMeta {
 const guide1Sections: GuideSection[] = [
   {
     id: 'signs',
-    title: 'Signs to watch for',
+    title: 'סימנים שכדאי לשים לב אליהם',
     content: (
       <>
         <p>
-          AI-assisted misinformation often exhibits telltale patterns: overly smooth or generic phrasing, inconsistent details within the same piece, and sources that are hard to verify or that do not exist. Synthetic images may show subtle artifacts, and deepfakes can have odd lip-sync or lighting.
+          דיסאינפורמציה בעזרת בינה מלאכותית לרוב מציגה דפוסים אופייניים: ניסוח חלק או גנרי מדי, פרטים לא עקביים באותו טקסט, ומקורות שקשה לאמת או שלא קיימים. תמונות סינתטיות עלולות להראות חריגות עדינות, ודייפייקים עלולים להראות סנכרון שפתיים או תאורה מוזרים.
         </p>
         <ul>
-          <li>Generic or formulaic language where you'd expect specific expertise</li>
-          <li>Claims that sound precise but cite no checkable source</li>
-          <li>Images or video that feel "off" (e.g. hands, text, or backgrounds)</li>
-          <li>Content that spreads very quickly and is heavily shared before fact-checking</li>
+          <li>שפה גנרית או פורמולאית במקום שמצופה מומחיות ספציפית</li>
+          <li>טענות שנשמעות מדויקות אבל ללא מקור שניתן לבדיקה</li>
+          <li>תמונות או וידאו שמרגישים "לא בסדר" (למשל ידיים, טקסט או רקעים)</li>
+          <li>תוכן שמתפשט מהר מאוד ומשותף בהמונים לפני בדיקת עובדות</li>
         </ul>
       </>
     ),
   },
   {
     id: 'verify',
-    title: 'Verification steps',
+    title: 'שלבי אימות',
     content: (
       <>
         <p>
-          Before sharing or acting on a claim, pause and verify. Use reverse image search, check multiple independent sources, and prefer outlets that correct errors and show their methodology. Be especially cautious with emotionally charged or "too good to be true" stories.
+          לפני שיתוף או פעולה על בסיס טענה, עצרו ואמתו. השתמשו בחיפוש תמונה הפוך, בדקו מקורות עצמאיים אחדים, והעדיפו גופי תקשורת שמתקנים טעויות ומציגים את המתודולוגיה. היו זהירים במיוחד עם סיפורים טעונים רגשית או "טובים מכדי להיות אמיתיים".
         </p>
         <p>
-          For creators: label synthetic or AI-assisted content where it could be mistaken for human-only work, and link to sources so others can verify.
+          ליוצרים: סמנו תוכן סינתטי או בעזרת AI כשאפשר להתבלבל בינו לבין עבודה אנושית בלבד, וקישרו למקורות כדי שאחרים יוכלו לאמת.
         </p>
       </>
     ),
@@ -66,38 +66,38 @@ const guide1Sections: GuideSection[] = [
 const guide2Sections: GuideSection[] = [
   {
     id: 'before',
-    title: 'Before you use AI',
+    title: 'לפני שימוש ב-AI',
     content: (
       <>
         <p>
-          Define your outlet's policy on when and how AI may be used (research, drafting, translation, etc.). Ensure you have the rights to use the tools and that you're not feeding confidential or off-the-record material into them. Understand that outputs can be wrong or biased.
+          הגדירו את מדיניות המערכת לגבי מתי ואיך מותר להשתמש ב-AI (מחקר, טיוטה, תרגום וכו׳). וודאו שיש לכם זכות להשתמש בכלים ושאתם לא מזינים חומר סודי או off-the-record. הבינו שהפלטים עלולים להיות שגויים או מוטים.
         </p>
       </>
     ),
   },
   {
     id: 'during',
-    title: 'While using AI',
+    title: 'בעת השימוש ב-AI',
     content: (
       <>
         <p>
-          Never treat AI output as fact without verification. Cross-check names, dates, quotes, and statistics with primary sources. Use AI to assist, not replace, editorial judgment. Document which steps used AI so you can correct and explain if needed.
+          לעולם אל תטפלו בפלט AI כבעובדה בלי אימות. בדקו שמות, תאריכים, ציטוטים וסטטיסטיקות מול מקורות ראשוניים. השתמשו ב-AI כעזר, לא כתחליף לשיפוט עיתונאי. תיעדו אילו שלבים השתמשו ב-AI כדי שתוכלו לתקן ולהסביר במידת הצורך.
         </p>
         <ul>
-          <li>Verify every factual claim with at least one independent source</li>
-          <li>Do not paste confidential or sensitive information into public AI tools</li>
-          <li>Keep a record of which parts of the story involved AI assistance</li>
+          <li>אמתו כל טענה עובדתית עם מקור עצמאי אחד לפחות</li>
+          <li>אל תדביקו מידע סודי או רגיש לכלי AI ציבוריים</li>
+          <li>שמרו רישום של אילו חלקים בכתבה כללו סיוע AI</li>
         </ul>
       </>
     ),
   },
   {
     id: 'after',
-    title: 'After publication',
+    title: 'אחרי הפרסום',
     content: (
       <>
         <p>
-          If your outlet discloses AI use, do so clearly (e.g. in an editor's note or byline). Correct errors promptly and transparently. Use reader feedback and corrections to improve policies and training.
+          אם המערכת מפרסמת שימוש ב-AI, עשו זאת בבירור (למשל בהערת עורך או בקרדיט). תקנו טעויות במהירות ובשקיפות. השתמשו במשוב קוראים ותיקונים לשיפור הנחיות וההדרכה.
         </p>
       </>
     ),
@@ -108,22 +108,22 @@ const guide2Sections: GuideSection[] = [
 const guide3Sections: GuideSection[] = [
   {
     id: 'gap',
-    title: 'What is the legal gap?',
+    title: 'מהו פער החקיקה?',
     content: (
       <>
         <p>
-          Existing laws were written for a world where creating convincing false content at scale was difficult and costly. Consumer protection, defamation, and criminal laws often don't fit AI-generated misinformation well: they may require proof of intent, identifiable harm, or a single "publisher," which is hard when content is mass-produced and spread by many actors.
+          החוקים הקיימים נכתבו לעולם שבו יצירת תוכן כוזב משכנע בקנה מידה הייתה קשה ויקרה. חוקי הגנת הצרכן, לשון הרע ועונשין לרוב לא מתאימים היטב לדיסאינפורמציה שנוצרה ב-AI: הם עלולים לדרוש הוכחת כוונה, נזק מזוהה או "מפרסם" אחד — דבר שקשה כשהתוכן מיוצר בהמונים ומופץ על ידי שחקנים רבים.
         </p>
       </>
     ),
   },
   {
     id: 'why-it-matters',
-    title: 'Why it matters for journalism',
+    title: 'למה זה חשוב לעיתונות',
     content: (
       <>
         <p>
-          The legal lacuna leaves both audiences and creators exposed. Audiences have limited recourse when they're misled by synthetic or AI-amplified content. Journalists and outlets can be impersonated or have their work distorted with few clear legal tools. Clarifying and, where needed, updating the law can help protect trust and accountability without stifling legitimate use of AI.
+          הלקונה החקיקתית משאירה גם קהלים וגם יוצרים חשופים. לצופים יש מעט מענה כשמטעים אותם בתוכן סינתטי או מוגבר ב-AI. עיתונאים וגופי תקשורת עלולים להיות מחקים או שעבודתם מעוותת עם מעט כלים משפטיים ברורים. בירור ועדכון החוק במידת הצורך יכולים לסייע להגן על אמון ואחריות בלי לחנוק שימוש לגיטימי ב-AI.
         </p>
       </>
     ),
@@ -134,23 +134,23 @@ const guide3Sections: GuideSection[] = [
 export const guidesIndex: GuideMeta[] = [
   {
     slug: 'how-to-spot-ai-misinformation',
-    title: 'How to spot AI-assisted misinformation',
-    summary: 'Practical signs and verification steps to recognise and check AI-generated or AI-amplified misleading content.',
-    tags: ['verification', 'consumers', 'literacy'],
+    title: 'איך לזהות דיסאינפורמציה בעזרת בינה מלאכותית',
+    summary: 'סימנים מעשיים ושלבי אימות לזיהוי ובדיקה של תוכן מטעה שנוצר או הוגבר בעזרת AI.',
+    tags: ['אימות', 'צרכנים', 'אוריינות'],
     readingTime: 4,
   },
   {
     slug: 'checklist-journalists-ai',
-    title: 'Checklist for journalists using AI tools',
-    summary: 'A short checklist for editorial teams: before, during, and after using AI in the newsroom.',
-    tags: ['journalism', 'ethics', 'checklist'],
+    title: 'צ׳קליסט לעיתונאים שמשתמשים בכלי AI',
+    summary: 'צ׳קליסט קצר לצוותים עיתונאיים: לפני, במהלך ואחרי שימוש ב-AI במערכת.',
+    tags: ['עיתונות', 'אתיקה', 'צ׳קליסט'],
     readingTime: 3,
   },
   {
     slug: 'understanding-legal-gap',
-    title: 'Understanding the legal gap (overview)',
-    summary: "Why existing laws often don't fit AI-enabled misinformation and what that means for creators and consumers.",
-    tags: ['legal', 'overview'],
+    title: 'הבנת פער החקיקה (סקירה)',
+    summary: 'מדוע החוק הקיים לרוב לא מתאים לדיסאינפורמציה מבוססת AI ומה המשמעות עבור יוצרים וצרכנים.',
+    tags: ['משפט', 'סקירה'],
     readingTime: 3,
   },
 ];
@@ -162,8 +162,8 @@ export const guidesBySlug: Record<string, Guide> = {
     tocItems: guide1Sections.map((s) => ({ id: s.id, label: s.title, level: 1 })),
     sections: guide1Sections,
     references: [
-      { title: 'Example fact-checking network', url: 'https://ifcn.org', note: 'International Fact-Checking Network' },
-      { title: 'Reverse image search', url: 'https://images.google.com', note: 'Google Images' },
+      { title: 'רשת בדיקת עובדות לדוגמה', url: 'https://ifcn.org', note: 'International Fact-Checking Network' },
+      { title: 'חיפוש תמונה הפוך', url: 'https://images.google.com', note: 'Google Images' },
     ],
   },
   'checklist-journalists-ai': {
@@ -171,7 +171,7 @@ export const guidesBySlug: Record<string, Guide> = {
     tocItems: guide2Sections.map((s) => ({ id: s.id, label: s.title, level: 1 })),
     sections: guide2Sections,
     references: [
-      { title: 'Reuters Institute: AI and journalism', url: 'https://reutersinstitute.politics.ox.ac.uk', note: 'Research and guidelines' },
+      { title: 'מכון רויטרס: AI ועיתונות', url: 'https://reutersinstitute.politics.ox.ac.uk', note: 'מחקר והנחיות' },
     ],
   },
   'understanding-legal-gap': {
@@ -179,7 +179,7 @@ export const guidesBySlug: Record<string, Guide> = {
     tocItems: guide3Sections.map((s) => ({ id: s.id, label: s.title, level: 1 })),
     sections: guide3Sections,
     references: [
-      { title: 'Council of Europe: AI and disinformation', note: 'Policy overview (placeholder)' },
+      { title: 'מועצת אירופה: AI ודיסאינפורמציה', note: 'סקירת מדיניות (placeholder)' },
     ],
   },
 };

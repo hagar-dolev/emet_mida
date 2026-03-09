@@ -14,14 +14,14 @@ export function PageLayout({ children, title, narrow = false }: PageLayoutProps)
   return (
     <>
       <a href="#main-content" className="skip-link">
-        Skip to main content
+        דלג לתוכן הראשי
       </a>
       <Header />
       <main
         id="main-content"
         className={`${styles.main} ${narrow ? styles.narrow : ''}`}
         role="main"
-        aria-label={title ?? 'Main content'}
+        aria-label={title ?? 'תוכן ראשי'}
       >
         {children}
       </main>

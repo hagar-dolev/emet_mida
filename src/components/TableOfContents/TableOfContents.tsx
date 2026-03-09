@@ -14,7 +14,7 @@ export interface TableOfContentsProps {
 
 export function TableOfContents({
   items,
-  title = 'On this page',
+  title = 'בעמוד זה',
   className = '',
 }: TableOfContentsProps) {
   if (items.length === 0) return null;
@@ -22,7 +22,7 @@ export function TableOfContents({
   return (
     <nav
       className={`${styles.toc} ${className}`}
-      aria-label="Table of contents"
+      aria-label="תוכן העמוד"
     >
       <h2 className={styles.title}>{title}</h2>
       <ol className={styles.list} role="list">

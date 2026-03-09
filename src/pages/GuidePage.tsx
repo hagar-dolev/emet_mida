@@ -11,9 +11,9 @@ export function GuidePage() {
     return (
       <PageLayout>
         <div className={styles.guide404}>
-          <h1>Guide not found</h1>
-          <p>The guide you're looking for doesn't exist or has been moved.</p>
-          <Link to="/guides">Back to guides</Link>
+          <h1>המדריך לא נמצא</h1>
+          <p>המדריך שחיפשתם לא קיים או הועבר.</p>
+          <Link to="/guides">חזרה למדריכים</Link>
         </div>
       </PageLayout>
     );

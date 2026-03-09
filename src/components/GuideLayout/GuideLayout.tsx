@@ -24,7 +24,7 @@ export function GuideLayout({
   return (
     <div className={styles.wrapper}>
       {tocItems.length > 0 && (
-        <aside className={styles.sidebar} aria-label="Table of contents">
+        <aside className={styles.sidebar} aria-label="תוכן העמוד">
           <TableOfContents items={tocItems} />
         </aside>
       )}
@@ -33,14 +33,14 @@ export function GuideLayout({
         <div className={styles.body}>{children}</div>
         {references.length > 0 && (
           <section className={styles.references} aria-labelledby="ref-heading">
-            <h2 id="ref-heading">References</h2>
+            <h2 id="ref-heading">מקורות</h2>
             <ul className={styles.refList} role="list">
               {references.map((ref, i) => (
                 <li key={i}>
                   {ref.url ? (
                     <a href={ref.url} target="_blank" rel="noopener noreferrer">
                       {ref.title}
-                      <span className={styles.visuallyHidden}>(opens in new tab)</span>
+                      <span className={styles.visuallyHidden}>(נפתח בטאב חדש)</span>
                     </a>
                   ) : (
                     <span>{ref.title}</span>

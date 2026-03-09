@@ -8,8 +8,8 @@ export interface HeaderProps {
 }
 
 export function Header({
-  siteName = 'AI Misinformation & Legal Gaps',
-  subtitle = 'A public knowledge hub for creators and consumers of journalistic content',
+  siteName = 'דיסאינפורמציה ובינה מלאכותית — פערי חקיקה',
+  subtitle = 'מרכז ידע ציבורי ליוצרים ולצרכני תוכן עיתונאי',
 }: HeaderProps) {
   return (
     <header className={styles.header} role="banner">

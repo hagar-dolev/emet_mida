@@ -7,9 +7,9 @@ import styles from './GuidesIndex.module.css';
 export function GuidesIndex() {
   return (
     <PageLayout>
-      <h1 className={styles.title}>Guides</h1>
+      <h1 className={styles.title}>מדריכים</h1>
       <p className={styles.intro}>
-        Practical, short guides to help you understand AI-assisted misinformation, use AI responsibly in journalism, and navigate the legal gap.
+        מדריכים קצרים ומעשיים שיעזרו לכם להבין דיסאינפורמציה בעזרת בינה מלאכותית, להשתמש ב-AI באחריות בעיתונות ולנווט בפער החקיקה.
       </p>
       <ul className={styles.list} role="list">
         {guidesIndex.map((guide) => (
@@ -31,7 +31,7 @@ export function GuidesIndex() {
                   ))}
                   {guide.readingTime != null && (
                     <span className={styles.readingTime}>
-                      {guide.readingTime} min read
+                      {guide.readingTime} דק׳ קריאה
                     </span>
                   )}
                 </div>

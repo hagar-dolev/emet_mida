@@ -4,38 +4,38 @@ import styles from './Legal.module.css';
 export function Legal() {
   return (
     <PageLayout narrow>
-      <h1 className={styles.title}>Legal gaps</h1>
+      <h1 className={styles.title}>פערי חקיקה</h1>
       <p className={styles.intro}>
-        Current laws are often insufficient to address AI-generated misleading content. Existing frameworks were designed for a different scale and kind of harm. This page summarises why the legal lacuna exists and what it means for consumers and creators.
+        החוק הקיים לרוב לא מספיק כדי לטפל בתוכן מטעה שנוצר בבינה מלאכותית. המסגרות הקיימות תוכננו לקנה מידה ולסוג נזק אחרים. בעמוד זה סיכום של הסיבות לקיום הלקונה החקיקתית ומה המשמעות עבור צרכנים ויוצרים.
       </p>
 
       <section aria-labelledby="faq-heading">
         <h2 id="faq-heading" className={styles.faqTitle}>
-          Frequently asked questions
+          שאלות נפוצות
         </h2>
         <Accordion>
           <AccordionItem
             id="consumer-protection"
-            title="Why consumer protection law isn't enough"
+            title="מדוע חוק הגנת הצרכן לא מספיק?"
           >
             <p>
-              Consumer protection law typically targets misleading commercial practices by identifiable traders. AI-generated misinformation is often produced and spread at scale by many actors, some anonymous or outside a single jurisdiction. Proving direct causation and attributing harm to a specific “trader” becomes difficult. The remedy set (e.g. redress from one seller) doesn't match the diffuse way this content is created and consumed.
+              חוק הגנת הצרכן בדרך כלל ממוקד במעשי הונאה מסחריים של סוחרים מזוהים. דיסאינפורמציה שנוצרה בבינה מלאכותית לרוב מיוצרת ומופצת בקנה מידה גדול על ידי שחקנים רבים, חלקם אנונימיים או מחוץ לרשות שיפוט אחת. הוכחת קשר סיבתי ישיר וייחוס נזק ל״סוחר״ מסוים נעשים קשים. מכלול הסעדים (למשל פיצוי מול מוכר אחד) לא תואם את האופן המפוזר שבו תוכן כזה נוצר ונצרך.
             </p>
           </AccordionItem>
           <AccordionItem
             id="defamation"
-            title="Why defamation law isn't enough"
+            title="מדוע דיני לשון הרע לא מספיקים?"
           >
             <p>
-              Defamation usually requires identifying a person or entity that was defamed, publication to a third party, and often proof of reputational harm and sometimes intent or negligence. With synthetic or AI-amplified content, the “publisher” may be unclear, the content may not target a single identifiable victim, and the volume of content makes individual lawsuits impractical. Defamation law was not designed for mass, automated distribution of misleading material.
+              לשון הרע בדרך כלל דורשת זיהוי אדם או גוף שהושמץ, פרסום לצד שלישי, ולעתים הוכחת נזק לשם טוב ולעיתים כוונה או רשלנות. בתוכן סינתטי או מוגבר ב-AI, ה״מפרסם״ עלול להיות לא ברור, התוכן עלול לא לפגוע בקורבן מזוהה אחד, ונפח התוכן הופך תביעות פרטניות ללא מעשיות. דיני לשון הרע לא תוכננו להפצה המונית ואוטומטית של חומר מטעה.
             </p>
           </AccordionItem>
           <AccordionItem
             id="criminal-panic"
-            title="What about criminal panic clause?"
+            title="ומה עם עבירות בהפצת ידיעות שגורמות לבהלה?"
           >
             <p>
-              Some jurisdictions have offences for spreading false information that causes panic or public harm. These often require a high bar (e.g. intent to cause panic, or a direct link to serious harm). They also tend to be used sparingly and after the fact. They don't provide a clear, preventive framework for the kind of AI-enabled misinformation that undermines trust in media and institutions without a single “panic” event. A tailored approach may be needed to close the gap.
+              בחלק מהשיטות המשפטיות קיימות עבירות על הפצת מידע כוזב שגורם לבהלה או נזק לציבור. אלה לרוב דורשות רף גבוה (למשל כוונה לגרום לבהלה, או קישור ישיר לנזק חמור). הן גם נוטות לשמש במשורה ולאחר מעשה. הן לא מספקות מסגרת מניעתית וברורה לדיסאינפורמציה מבוססת AI שמערערת אמון בתקשורת ובמוסדות בלי אירוע ״בהלה״ בודד. ייתכן שנדרש פתרון מותאם לסגירת הפער.
             </p>
           </AccordionItem>
         </Accordion>

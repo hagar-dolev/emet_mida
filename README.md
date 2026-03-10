@@ -43,11 +43,13 @@ A simple, component-based static website (React + TypeScript + Vite) for a publi
 
 ## Deploy to GitHub Pages (GitHub Actions — recommended)
 
+**Important:** GitHub Pages must use **GitHub Actions** as the source, not "Deploy from a branch". If you use a branch, the site will serve the raw repo (including `index.html` that points to `src/main.tsx`), which causes 404s and "Cannot read properties of undefined" errors.
+
 1. **Push the repo to GitHub** (if you haven’t already).
 
 2. **Enable GitHub Pages and set source**
    - Go to the repo → **Settings** → **Pages**.
-   - Under **Build and deployment**, set **Source** to **GitHub Actions**.
+   - Under **Build and deployment**, set **Source** to **GitHub Actions** (not "Deploy from a branch").
 
 3. **Trigger deployment**
    - The included workflow (`.github/workflows/deploy.yml`) runs on push to `main` and on manual dispatch.
@@ -59,6 +61,16 @@ A simple, component-based static website (React + TypeScript + Vite) for a publi
    If your default branch is not `main`, edit `.github/workflows/deploy.yml` and change `branches: [main]` to your branch (e.g. `master`).
 
 No `gh-pages` package or manual upload is required; the workflow handles the build and deploy.
+
+### Troubleshooting: 404 for `src/main.tsx` or "Cannot read properties of undefined (reading 'payload')"
+
+If the live site shows these errors, GitHub Pages is serving the **repository source** (your `index.html` in the repo root) instead of the **built output** from the workflow. Fix it by:
+
+1. Going to the repo → **Settings** → **Pages**.
+2. Under **Build and deployment** → **Source**, select **GitHub Actions** (not "Deploy from a branch").
+3. Push a commit to `main` (or run the workflow via **Actions** → **Deploy to GitHub Pages** → **Run workflow**) so the workflow builds and deploys the `dist` folder.
+
+After that, the site URL will serve the built app (e.g. `https://<username>.github.io/<repository-name>/`).
 
 ---
 

@@ -8,7 +8,7 @@ export interface HeaderProps {
 }
 
 export function Header({
-  siteName = 'דיסאינפורמציה ובינה מלאכותית — פערי חקיקה',
+  siteName = 'עיתונאות, בינה מלאכותית ופערי חקיקה',
   subtitle = 'מרכז ידע ציבורי ליוצרים ולצרכני תוכן עיתונאי',
 }: HeaderProps) {
   return (

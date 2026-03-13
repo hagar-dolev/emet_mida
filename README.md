@@ -7,6 +7,7 @@ A simple, component-based static website (React + TypeScript + Vite) for a publi
 ## Local development
 
 1. **Install dependencies**
+
    ```bash
    npm install
    ```
@@ -22,15 +23,19 @@ A simple, component-based static website (React + TypeScript + Vite) for a publi
 ## Build
 
 - **Production build** (for deployment; use correct base path for your host):
+
   ```bash
   npm run build
   ```
+
   Output is in `dist/`.
 
 - **Build with GitHub Pages base path** (e.g. if your repo is `my-repo` and the site will be at `https://<user>.github.io/my-repo/`):
+
   ```bash
   VITE_BASE_PATH=/my-repo/ npm run build
   ```
+
   Replace `my-repo` with your actual repository name.
 
 - **Preview the production build locally**
@@ -42,8 +47,6 @@ A simple, component-based static website (React + TypeScript + Vite) for a publi
 ---
 
 ## Deploy to GitHub Pages (GitHub Actions — recommended)
-
-**Important:** GitHub Pages must use **GitHub Actions** as the source, not "Deploy from a branch". If you use a branch, the site will serve the raw repo (including `index.html` that points to `src/main.tsx`), which causes 404s and "Cannot read properties of undefined" errors.
 
 1. **Push the repo to GitHub** (if you haven’t already).
 
@@ -62,16 +65,6 @@ A simple, component-based static website (React + TypeScript + Vite) for a publi
 
 No `gh-pages` package or manual upload is required; the workflow handles the build and deploy.
 
-### Troubleshooting: 404 for `src/main.tsx` or "Cannot read properties of undefined (reading 'payload')"
-
-If the live site shows these errors, GitHub Pages is serving the **repository source** (your `index.html` in the repo root) instead of the **built output** from the workflow. Fix it by:
-
-1. Going to the repo → **Settings** → **Pages**.
-2. Under **Build and deployment** → **Source**, select **GitHub Actions** (not "Deploy from a branch").
-3. Push a commit to `main` (or run the workflow via **Actions** → **Deploy to GitHub Pages** → **Run workflow**) so the workflow builds and deploys the `dist` folder.
-
-After that, the site URL will serve the built app (e.g. `https://<username>.github.io/<repository-name>/`).
-
 ---
 
 ## Deploy using `gh-pages` (alternative)
@@ -79,6 +72,7 @@ After that, the site URL will serve the built app (e.g. `https://<username>.gith
 If you prefer to deploy from your machine with the `gh-pages` package:
 
 1. **Install**
+
    ```bash
    npm install -D gh-pages
    ```
@@ -104,6 +98,7 @@ If you prefer to deploy from your machine with the `gh-pages` package:
 1. **Open** `src/content/guides.tsx`.
 
 2. **Add an entry to `guidesIndex`** (meta for the guides listing):
+
    ```ts
    {
      slug: 'my-new-guide',
@@ -115,6 +110,7 @@ If you prefer to deploy from your machine with the `gh-pages` package:
    ```
 
 3. **Define sections** (same file), e.g.:
+
    ```ts
    const myNewGuideSections: GuideSection[] = [
      {
@@ -131,6 +127,7 @@ If you prefer to deploy from your machine with the `gh-pages` package:
    ```
 
 4. **Add the full guide to `guidesBySlug`**:
+
    ```ts
    'my-new-guide': {
      ...guidesIndex[n],  // use the index of the entry you added in step 2
@@ -141,6 +138,7 @@ If you prefer to deploy from your machine with the `gh-pages` package:
      ],
    },
    ```
+
    Make sure the `...guidesIndex[n]` refers to the correct entry (same slug).
 
 5. **Save.** The new guide will appear on `/guides` and at `/guides/my-new-guide`.
@@ -173,16 +171,16 @@ If you prefer to deploy from your machine with the `gh-pages` package:
 
 ## Key files to edit for content
 
-| Goal                     | File(s) |
-|--------------------------|--------|
-| Add or edit guides       | `src/content/guides.tsx` |
-| Home hero, feature cards | `src/pages/Home.tsx` + `Home.module.css` |
-| Legal page / FAQ         | `src/pages/Legal.tsx` |
-| Tech page / callout      | `src/pages/Tech.tsx` |
-| Proposal / contact       | `src/pages/Proposal.tsx` |
-| Site name, nav links     | `src/components/Header/Header.tsx`, `src/components/Navbar/Navbar.tsx` |
-| Footer disclaimer        | `src/components/Footer/Footer.tsx` |
-| Global theme (colors, spacing) | `src/styles/global.css` |
+| Goal                           | File(s)                                                                |
+| ------------------------------ | ---------------------------------------------------------------------- |
+| Add or edit guides             | `src/content/guides.tsx`                                               |
+| Home hero, feature cards       | `src/pages/Home.tsx` + `Home.module.css`                               |
+| Legal page / FAQ               | `src/pages/Legal.tsx`                                                  |
+| Tech page / callout            | `src/pages/Tech.tsx`                                                   |
+| Proposal / contact             | `src/pages/Proposal.tsx`                                               |
+| Site name, nav links           | `src/components/Header/Header.tsx`, `src/components/Navbar/Navbar.tsx` |
+| Footer disclaimer              | `src/components/Footer/Footer.tsx`                                     |
+| Global theme (colors, spacing) | `src/styles/global.css`                                                |
 
 ---
 

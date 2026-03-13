@@ -2,12 +2,12 @@ import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const navItems: { to: string; label: string }[] = [
-  { to: '/', label: 'בית' },
+  { to: '/journalism', label: 'בית' },
   { to: '/guides', label: 'מדריכים' },
-  { to: '/journalism', label: 'עיתונות' },
-  { to: '/legal', label: 'משפט' },
   { to: '/tech', label: 'טכנולוגיה' },
+  { to: '/legal', label: 'משפט' },
   { to: '/proposal', label: 'הצעת חוק' },
+  // { to: '/', label: 'אודות' },
 ];
 
 export function Navbar() {

@@ -7,7 +7,7 @@ const navItems: { to: string; label: string }[] = [
   { to: '/journalism', label: 'עיתונות' },
   { to: '/legal', label: 'משפט' },
   { to: '/tech', label: 'טכנולוגיה' },
-  { to: '/proposal', label: 'הצעה' },
+  { to: '/proposal', label: 'הצעת חוק' },
 ];
 
 export function Navbar() {

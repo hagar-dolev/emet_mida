@@ -30,7 +30,7 @@ const featureCards = [
   },
   {
     to: '/proposal',
-    title: 'הצעה',
+    title: 'הצעת חוק',
     summary: 'כיוון ההצעה שלנו: חיזוק אוריינות ותיקון חקיקתי לסגירת הפער עבור יוצרים וצרכנים.',
     icon: <IconFileText />,
   },

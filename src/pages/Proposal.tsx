@@ -4,7 +4,7 @@ import styles from './Proposal.module.css';
 export function Proposal() {
   return (
     <PageLayout narrow>
-      <h1 className={styles.title}>הצעת חוק</h1>
+      <h1 className={styles.title}>הצעה</h1>
 
       <section aria-labelledby="proposed-fix-heading">
         <h2 id="proposed-fix-heading" className={styles.heading}>

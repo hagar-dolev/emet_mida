@@ -1,0 +1,70 @@
+.header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #555; /* גוון אפור עדין, אפשר לשנות לפי משתני הצבע בפרויקט שלכם */
+}
+
+.topicsContainer {
+  margin-top: 2rem;
+}
+
+/* מסדר את הכרטיסיות בטור עם רווחים שווים ביניהן */
+.topicList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; 
+}
+
+.topicContent {
+  margin-top: 1rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* מחביא את הכותרת (היא שם רק בשביל נגישות לקוראי מסך) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.refList {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e0e0e0;
+  padding-inline-start: 1.25rem;
+  list-style: decimal;
+  font-size: 0.9rem;
+}
+
+.refList li {
+  margin-bottom: 0.25rem;
+}
+
+.refList a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #999;
+  text-underline-offset: 2px;
+}
+
+.refList a:hover {
+  text-decoration-color: currentColor;
+}

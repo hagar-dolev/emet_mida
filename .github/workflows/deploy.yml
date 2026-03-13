@@ -37,6 +37,10 @@ jobs:
         env:
           VITE_BASE_PATH: ${{ contains(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
 
+      # GitHub Pages returns 404 for unknown paths; serve the SPA so client-side routing works on refresh/direct URLs
+      - name: Add 404.html for SPA routing
+        run: cp dist/index.html dist/404.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

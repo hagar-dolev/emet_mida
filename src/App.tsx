@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { GuidesIndex } from './pages/GuidesIndex';
 import { GuidePage } from './pages/GuidePage';
-import { Journalism } from './pages/Journalism';
 import { Legal } from './pages/Legal';
 import { Tech } from './pages/Tech';
 import { Proposal } from './pages/Proposal';
@@ -14,7 +13,6 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/guides" element={<GuidesIndex />} />
       <Route path="/guides/:slug" element={<GuidePage />} />
-      <Route path="/journalism" element={<Journalism />} />
       <Route path="/legal" element={<Legal />} />
       <Route path="/tech" element={<Tech />} />
       <Route path="/proposal" element={<Proposal />} />

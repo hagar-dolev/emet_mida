@@ -11,12 +11,6 @@ const featureCards = [
     icon: <IconBook />,
   },
   {
-    to: '/journalism',
-    title: 'שוק העיתונות בעידן ה-AI',
-    summary: 'מבנה שוק העיתונות המודרני בסביבת מידע דיגיטלית.',
-    icon: <IconBook />,// todo
-  },
-  {
     to: '/legal',
     title: 'פערי חקיקה',
     summary: 'מדוע החוק הקיים לרוב לא מספיק כדי לטפל בתוכן מטעה שנוצר בבינה מלאכותית ומה חסר.',

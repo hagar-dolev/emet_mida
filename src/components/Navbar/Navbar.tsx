@@ -4,7 +4,6 @@ import styles from './Navbar.module.css';
 const navItems: { to: string; label: string }[] = [
   { to: '/', label: 'בית' },
   { to: '/guides', label: 'מדריכים' },
-  { to: '/journalism', label: 'עיתונות' },
   { to: '/legal', label: 'משפט' },
   { to: '/tech', label: 'טכנולוגיה' },
   { to: '/proposal', label: 'הצעה' },

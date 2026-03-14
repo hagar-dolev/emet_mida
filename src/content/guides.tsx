@@ -157,7 +157,12 @@ const guide4Sections: GuideSection[] = [
           אחרי שאימתת או שיש לך חשד סביר לחדשות כוזבות, אפשר לפנות לגורמים הבאים:
         </p>
         <ul>
-          <li><strong>דיווח על חדשות כוזבות (Fake Reporter):</strong> ארגון "פקטור צ'קר" / גופי בדיקת עובדות — ניתן לדווח על תוכן חשוד ולקבל סיוע בזיהוי והפצת תיקונים. חפשו "דיווח חדשות כוזבות" או "פקט צ'ק ישראל" לקבלת ערוץ הדיווח העדכני.</li>
+          <li>
+            <strong>פייק ריפורטר (FakeReporter):</strong> ארגון אזרחי ישראלי — "המרכז האזרחי להגנת הדיגיטל" — שמאגד מחקרים מעמיקים על פייק ניוז, מקורות הדיסאינפורמציה ומבצעי השפעה. הארגון נוסד על ידי חוקרים ופעילים, משלב מומחיות OSINT, טכנולוגיה ופלטפורמה מבוססת ציבור; מזהה ומחשיף איומים ברשת, מפרסם תחקירים בתקשורת ועובד עם רשויות ופלטפורמות להסרת תוכן מזיק. ניתן לדווח אצלם על פייק ניוז, הסתה, חשד להתערבות זרה ותוכן פוגעני — דרך טופס הדיווח באתר.{' '}
+            <a href="https://fakereporter.net/" target="_blank" rel="noopener noreferrer">fakereporter.net</a>
+            {' '}(עברית) או{' '}
+            <a href="https://fakereporter.net/en/english/" target="_blank" rel="noopener noreferrer">גרסה באנגלית</a>.
+          </li>
           <li><strong>אגודת האינטרנט הישראלי (ISOC-IL):</strong> עוסקת במדיניות אינטרנט, זכויות דיגיטליות והגנת הצרכן ברשת. ניתן לפנות אליהם להכוונה בנושאי תוכן מטעה, פרטיות וזכויות ברשת — דרך האתר או דוא"ל ליצירת קשר.</li>
           <li><strong>משרד התקשורת — מדריך לצרכן התקשורת:</strong> מספק מידע רשמי על זיהוי חדשות כוזבות והתנהגות אחראית ברשת; מומלץ כנקודת מידע ראשונית.</li>
         </ul>
@@ -249,6 +254,8 @@ export const guidesBySlug: Record<string, Guide> = {
     tocItems: guide4Sections.map((s) => ({ id: s.id, label: s.title, level: 1 })),
     sections: guide4Sections,
     references: [
+      { title: 'פייק ריפורטר — המרכז האזרחי להגנת הדיגיטל', url: 'https://fakereporter.net/', note: 'דיווח ומידע (עברית)' },
+      { title: 'FakeReporter — English', url: 'https://fakereporter.net/en/english/', note: 'דיווח ומידע (אנגלית)' },
       { title: 'מדריך לצרכן התקשורת — זיהוי חדשות כוזבות', url: 'https://www.gov.il/he/pages/identifyfakenews', note: 'משרד התקשורת' },
       { title: 'אגודת האינטרנט הישראלי', url: 'https://www.isoc.org.il', note: 'ISOC-IL — יצירת קשר והכוונה' },
       { title: 'International Fact-Checking Network (IFCN)', url: 'https://ifcn.org', note: 'רשת גופי בדיקת עובדות' },

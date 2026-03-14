@@ -6,6 +6,8 @@ export { Callout } from './Callout';
 export type { CalloutProps } from './Callout';
 export { Card, CardTitle, CardSummary } from './Card';
 export type { CardProps } from './Card';
+export { Figure } from './Figure';
+export type { FigureProps } from './Figure';
 export { Footer } from './Footer';
 export { GuideLayout } from './GuideLayout';
 export type { GuideLayoutProps, Reference } from './GuideLayout';

@@ -1,7 +1,11 @@
 import { PageLayout, Callout } from '../components';
 import styles from './Proposal.module.css';
 
-const PROPOSAL_PDF_URL = '/documents/law_litigation_proposal.pdf';
+// Use direct GitHub raw URL when set (e.g. in CI) so download works on GitHub Pages; else relative path for local
+const base = (import.meta.env.BASE_URL || '/').replace(/\/?$/, '/');
+const PROPOSAL_PDF_URL =
+  import.meta.env.VITE_PROPOSAL_PDF_URL ||
+  `${base}documents/law_litigation_proposal.pdf`;
 
 export function Proposal() {
   return (

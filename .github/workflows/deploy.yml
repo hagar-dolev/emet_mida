@@ -32,10 +32,12 @@ jobs:
         run: npm ci
 
       # Base path must match your GitHub Pages URL: https://<owner>.github.io/<repo>/
+      # Proposal PDF: direct link to file in repo so download works on GitHub Pages
       - name: Build
         run: npm run build
         env:
           VITE_BASE_PATH: ${{ contains(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
+          VITE_PROPOSAL_PDF_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/public/documents/law_litigation_proposal.pdf
 
       # GitHub Pages returns 404 for unknown paths; serve the SPA so client-side routing works on refresh/direct URLs
       - name: Add 404.html for SPA routing

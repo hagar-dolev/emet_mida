@@ -10,10 +10,10 @@ export function Footer() {
           <Link to="/guides">מדריכים</Link>
           <Link to="/tech">טכנולוגיה</Link>
           <Link to="/legal">משפט</Link>
-          <Link to="/proposal">הצעה</Link>
+          <Link to="/proposal">הצעת חוק</Link>
         </nav>
         <p className={styles.disclaimer}>
-          האתר נעשה במסגרת קורס ״בינה מלאכותית ומוסר״ באוניברסיטת רייכמן.
+          האתר נבנה במסגרת קורס ״בינה מלאכותית ומוסר״ באוניברסיטת רייכמן.
         </p>
       </div>
     </footer>

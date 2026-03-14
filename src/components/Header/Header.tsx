@@ -9,7 +9,7 @@ export interface HeaderProps {
 
 export function Header({
   siteName = 'עיתונאות, בינה מלאכותית ופערי חקיקה',
-  subtitle = 'מרכז ידע ציבורי ליוצרים ולצרכני תוכן עיתונאי',
+  subtitle = 'מידע וכלים ליוצרים ולצרכני תוכן עיתונאי',
 }: HeaderProps) {
   return (
     <header className={styles.header} role="banner">

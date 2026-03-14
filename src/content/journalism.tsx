@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Figure } from '../components';
 
 export interface TopicReference {
   title: string;
@@ -126,7 +127,11 @@ export const topics: Topic[] = [
     content: (
         <>
         <p>היחלשות המודל הכלכלי מובילה להתרחבות תופעת "מדבריות החדשות" (News Deserts) – אזורים גיאוגרפיים שלמים ללא מקור אמין לחדשות מקומיות. בארצות הברית, כ-50 מיליון בני אדם חיים כיום במחוזות כאלו, לאחר שכ-40% מהעיתונים המקומיים נעלמו בשני העשורים האחרונים.היעלמות העיתונות המקומית קשורה באופן ישיר לירידה במעורבות אזרחית, עלייה בשחיתות שלטונית והתגברות הקיטוב החברתי. ללא גופי תקשורת שיפקחו על הרשויות המקומיות, העלות הכלכלית של הממשל הציבורי עולה, והציבור נשאר ללא הגנה מפני דיסאינפורמציה ברמה המקומית.</p>
-        <img src="https://www.usnewsdeserts.com/wp-content/uploads/2020/06/Do_You_Live_in_a_News_Desert_website_V2_Sting_06-11-2020.png" alt="תיאור התמונה בעברית" />
+        <Figure
+          src="https://www.usnewsdeserts.com/wp-content/uploads/2020/06/Do_You_Live_in_a_News_Desert_website_V2_Sting_06-11-2020.png"
+          alt="מפת ארצות הברית: האם אתה גר במדבר חדשות?"
+          caption="מפת 'מדבריות חדשות' בארצות הברית (מקור: US News Deserts)"
+        />
         </>
     ),
     references: [

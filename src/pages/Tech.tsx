@@ -1,4 +1,4 @@
-import { PageLayout, Callout } from '../components';
+import { PageLayout, Callout, Figure } from '../components';
 import styles from './Tech.module.css';
 
 export function Tech() {
@@ -22,9 +22,18 @@ export function Tech() {
         <p>
           חיסרון נוסף: המודלים מאומנים על דאטה מהאינטרנט. מידע שחוזר על עצמו  גם כשהוא לא נכון  עלול להיתפס כעובדה. "מחיקת" מידע כוזב מהמודל ולמידה מחדש נשארות אתגר פתוח (דוגמאות בולטות: מודלים שמאומנים על פוסטים מרשת X).
         </p>
-        <div className={styles.mediaPlaceholder} aria-hidden>
-          מקום לתמונה או אינפוגרפיקה  למשל סכמה של Transformer / Attention
-        </div>
+      <Figure
+        src={`${import.meta.env.BASE_URL}images/transformer_explainer_preview.png`}
+        alt="תצוגת Transformer Explainer — הדגמה חזותית של ארכיטקטורת Transformers"
+        caption={
+          <>
+            <a href="https://poloclub.github.io/transformer-explainer/" target="_blank" rel="noopener noreferrer">
+              Transformer Explainer - הדגמה אינטראקטיבית של ארכיטקטורת Transformers
+            </a>
+          </>
+        }
+      />
+
       </section>
 
       <section aria-labelledby="generative-media-heading">
@@ -34,9 +43,17 @@ export function Tech() {
         <p>
           <strong>מודלי דיפוזיה (Diffusion)</strong> לומדים ליצור תמונות ווידאו מתיאור טקסטואלי (Text-to-Image). הם "מנקים" רעש עד שמתקבלת תמונה חדה  שנראית אמיתית אבל לא קרתה במציאות. התוצאה: אפשר לייצר "ראיות" חזותיות לאירועים שלא התרחשו, בעלות אפסית ובמהירות. עבור עיתונות, זה איום ישיר על מהימנות  תוכן משכנע בלי צילום בשטח ובלי תיעוד אנושי.
         </p>
-        <div className={styles.mediaPlaceholder} aria-hidden>
-          מקום לתמונה או דוגמה  השוואת תמונה אמיתית לסינתטית / איור Diffusion
-        </div>
+        <Figure
+          src={`${import.meta.env.BASE_URL}images/diffusion_visualization.png`}
+          alt="דיאגרמה: דיפוזיה מבוססת דה-נויזינג — תמונה חדשה מתגלה מרעש טהור דרך ניקוי רעש חוזר (מקור: NVIDIA)"
+          caption={
+            <>
+              <a href="https://developer.nvidia.com/blog/generative-ai-research-spotlight-demystifying-diffusion-based-models/" target="_blank" rel="noopener noreferrer">
+                Demystifying Diffusion-Based Models (NVIDIA) — הסבר על דיפוזיה מבוססת דה-נויזינג ואיך מודלים מייצרים תמונות מרעש
+              </a>
+            </>
+          }
+        />
       </section>
 
       <section aria-labelledby="moe-heading">
@@ -72,9 +89,6 @@ export function Tech() {
         <p>
           לכן: הסתמכות על RAG (או על כלי אימות אוטומטיים) אינה מחליפה <strong>הצלבת מקורות והטלת ספק אקטיבית</strong> מצד העיתונאי.
         </p>
-        <div className={styles.mediaPlaceholder} aria-hidden>
-          מקום לתרשים  זרימת RAG (שאילתה → שליפה → מודל → תשובה)
-        </div>
       </section>
 
       <Callout variant="info" title="חשוב לזכור">

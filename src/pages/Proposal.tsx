@@ -1,4 +1,4 @@
-import { PageLayout, Callout, Button } from '../components';
+import { PageLayout, Callout } from '../components';
 import styles from './Proposal.module.css';
 
 const PROPOSAL_PDF_URL = '/documents/law_litigation_proposal.pdf';

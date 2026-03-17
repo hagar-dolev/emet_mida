@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
 import { GuidesIndex } from './pages/GuidesIndex';
 import { GuidePage } from './pages/GuidePage';
 import { Journalism } from './pages/Journalism';

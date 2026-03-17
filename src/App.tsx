@@ -11,7 +11,7 @@ import { NotFound } from './pages/NotFound';
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} /> {/* TODO: maybe change here. */}
+      <Route path="/" element={<Journalism />} /> {/* TODO: maybe change here. */}
       <Route path="/guides" element={<GuidesIndex />} />
       <Route path="/guides/:slug" element={<GuidePage />} />
       <Route path="/journalism" element={<Journalism />} />
